@@ -20,6 +20,11 @@ def create_rectangle():
 
     object_id = can.create_polygon(10, 10, 70, 70, fill='black', outline='red', width=3)
 
+def create_circle():
+    global object_id
+    
+    object_id = can.create_oval(175, 100, 100, 175, fill='orange', outline='orange', width = 120);
+
 def create_line():
     global object_id
 
@@ -44,6 +49,9 @@ btn_line.pack()
 
 btn_rectangle = tk.Button(window, text='Rectangle', width=30, command=create_rectangle)
 btn_rectangle.pack()
+
+btn_circle = tk.Button(window, text='Circle', width=30, command=create_circle)
+btn_circle.pack()
 
 btn_delete = tk.Button(window, text='Delete', width=30, command=delete)
 btn_delete.pack()
