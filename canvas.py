@@ -18,7 +18,7 @@ def delete():
 def create_rectangle():
     global object_id
 
-    object_id = can.create_polygon(10, 10, 70, 70, fill='black', outline='red', width=3)
+    object_id = can.create_rectangle(20, 20, 100, 80, fill='yellow', outline='red', width=3)
 
 def create_line():
     global object_id
