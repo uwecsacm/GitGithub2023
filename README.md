@@ -7,4 +7,6 @@ Tickets for this Sprint:
 - Users would like the line to be green
 - Bug: The rectangle is creating a line currently. It should be a 100x100 square
 - 
+Good job!!
+
 code copied from https://stackoverflow.com/questions/47700462/creating-and-moving-shapes-on-click-with-tkinter-and-canvas
