@@ -20,6 +20,11 @@ def create_rectangle():
 
     object_id = can.create_polygon(10, 10, 70, 70, fill='black', outline='red', width=3)
 
+def create_circle():
+    global object_id
+    
+    object_id = can.create_oval(175, 100, 100, 175, fill='orange', outline='orange', width = 120);
+
 def create_line():
     global object_id
 
@@ -31,11 +36,11 @@ object_id = None
 
 window = tk.Tk()
 window.title('Get Github objets')
-window.resizable(width=False, height=False)
+window.resizable(width=True, height=True)
 window.geometry('400x200+100+50')
 window.configure(bg='light green')
 
-can = tk.Canvas(window, bg='white', height=300, width=300)
+can = tk.Canvas(window, bg='white', height=500, width=500)
 can.pack(side=tk.RIGHT)
 can.bind("<Button-1>", click)
 
@@ -44,6 +49,9 @@ btn_line.pack()
 
 btn_rectangle = tk.Button(window, text='Rectangle', width=30, command=create_rectangle)
 btn_rectangle.pack()
+
+btn_circle = tk.Button(window, text='Circle', width=30, command=create_circle)
+btn_circle.pack()
 
 btn_delete = tk.Button(window, text='Delete', width=30, command=delete)
 btn_delete.pack()
