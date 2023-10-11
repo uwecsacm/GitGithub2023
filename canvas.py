@@ -36,11 +36,11 @@ object_id = None
 
 window = tk.Tk()
 window.title('Get Github objets')
-window.resizable(width=False, height=False)
+window.resizable(width=True, height=True)
 window.geometry('400x200+100+50')
 window.configure(bg='light green')
 
-can = tk.Canvas(window, bg='white', height=300, width=300)
+can = tk.Canvas(window, bg='white', height=500, width=500)
 can.pack(side=tk.RIGHT)
 can.bind("<Button-1>", click)
 
