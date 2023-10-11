@@ -24,7 +24,7 @@ def create_line():
     global object_id
 
     object_id = can.create_line(200, 200, 100, 100, fill='blue', width=5)
-
+ 
 # --- main ---
 
 object_id = None
